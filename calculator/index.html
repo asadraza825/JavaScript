@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <script src="app.js"></script>
+    </head>
+    <style>
+        .flex-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        background-color:white;
+        padding:1px;
+    }
+        .center{
+            text-align: center;
+        }
+        input[type=button]{
+            padding:25px;
+            font-size:20px;
+            background: lightGray;
+            width: 20%;
+            font-weight: bold;
+            border-radius: 7px;     
+            justify-content: center;
+            text-align: center;
+                   
+        }
+        input[type=text]{
+            padding:20px;
+            font-size:16px;
+            width:100%;
+            height:50px;
+            position: relative;
+            display: block;
+            width: 90%;
+            margin: 5px auto;
+            font-size: 20px;
+            padding: 10px;
+            box-shadow: 4px 0px 12px black inset;
+        }
+        #eq{
+            height:155px;
+        }
+        #dot,#clr{
+            width:132px;
+            margin:1px;
+        }
+  
+    input[type=button]:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+input[type=button]:hover {
+  background-color: #003300;
+  color: white;
+}
+
+
+    </style>
+    <body>
+        <div class="center">
+            <h3>CALCULATOR</h3>
+        </div>
+        <div class="flex-container">
+            <div>
+                <input type="text" name="res" id="res" onclick="(calc(this.value))"  />
+            </div>
+        </div>
+        <div class="flex-container">
+            
+            <div>
+                <input type="button" name="clr" id="clr" value="CLEAR" onclick="clr()"  />
+            </div>
+            
+            <div>
+                <input type="button" name="btn1" id="mul" value="x"  onclick="(calc(this.value))"  />
+            </div>
+            
+            <div>
+                <input type="button" name="btn1" id="div" value="/" onclick="(calc(this.value))"  />
+            </div>
+        </div>
+        <div class="flex-container">
+            
+            <div>
+                <input type="button" name="btn1" id="btn7" value="7" onclick="(calc(this.value))"  />
+            </div>
+            
+            <div>
+                <input type="button" name="btn1" id="btn8" value="8" onclick="(calc(this.value))"  />
+            </div>
+            
+            <div>
+                <input type="button" name="btn1" id="btn9" value="9" onclick="(calc(this.value))"  />
+            </div>
+            <div>
+                <input type="button" name="btn1" id="min" value="-" onclick="(calc(this.value))"  />
+            </div>
+            
+        </div>
+        <div class="flex-container">
+            
+            <div>
+                <input type="button" name="btn1" id="btn4" value="4" onclick="(calc(this.value))"  />
+            </div>
+            
+            <div>
+                <input type="button" name="btn1" id="btn5" value="5" onclick="(calc(this.value))"  />
+            </div>
+            
+            <div>
+                <input type="button" name="btn1" id="btn6" value="6" onclick="(calc(this.value))"  />
+            </div>
+            <div>
+                <input type="button" name="btn1" id="sum" value="+" onclick="(calc(this.value))"  />
+            </div>
+            
+        </div>
+        <div class="flex-container">
+            
+            <div>
+                <input type="button" name="btn1" id="btn1" value="1" onclick="(calc(this.value))" style="width: 58px;"  />
+                <input type="button" name="btn1" id="btn2" value="2" onclick="(calc(this.value))" style="width: 57px;padding-left: 26px;margin-left: 5px;"  />
+                <input type="button" name="btn1" id="btn3" value="3" onclick="(calc(this.value))" style="width: 57px;padding-left: 26px;margin-left: 5px;"  />
+                
+            <div>
+               
+                <div>
+                    <input type="button" name="btn1" id="btn0" value="0" onclick="(calc(this.value))"  />
+                    <input type="button" name="btn1" id="dot" value="." onclick="(calc(this.value))"  />
+                    
+                </div>
+
+            </div>
+            </div>
+            
+            <div>
+                <input type="button" name="eq" id="eq" value="=" onclick="get_calc()"  />
+            </div>
+            
+        </div>
+    </body>
+</html>
