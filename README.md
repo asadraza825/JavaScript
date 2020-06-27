@@ -1,6 +1,6 @@
 # JavaScript
 
-This repository containts following directoriies and files
+This repository containts following directories and files.
 <h3>1. JS book</h3>
 <h3>2. Calculator</h3>
 <p> Calculator written in html and javascript</p>
