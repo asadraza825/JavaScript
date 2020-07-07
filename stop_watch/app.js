@@ -25,5 +25,8 @@ function stop(){
 }
 
 function clear_time(){
+	min =0
+	sec = 0
+	msec = 0
 	document.getElementById("time").innerHTML = "0:0:0"
 }
