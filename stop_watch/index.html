@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Stop Watch</title>
+        <script src="app.js"></script>
+    </head>
+    <style>
+        .flex-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        background-color:white;
+        padding:1px;
+    }
+        .center{
+            text-align: center;
+        }
+        input[type=button]{
+            padding:25px;
+            font-size:20px;
+            background: lightGray;
+            font-weight: bold;
+            border-radius: 7px;     
+            justify-content: center;
+            text-align: center;
+                   
+        }
+  
+    input[type=button]:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+input[type=button]:hover {
+  background-color: #003300;
+  color: white;
+}
+
+
+    </style>
+    <body>
+        <div class="center">
+            <h3>STOP WATCH</h3>
+        </div>
+        <div class="flex-container">
+            <div>
+                <h1 class="center"><time id="time">0:0:0</h1>
+                <input type="button" value="start" id="start" onclick="start()"/>
+                <input type="button" value="stop"  id="stop" onclick="stop()" />
+                <input type="button" value="clear" id="clear" onclick="clear_time()" />
+            </div>
+        </div>
+    </body>
+</html>
