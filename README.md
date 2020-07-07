@@ -1,0 +1,10 @@
+# JavaScript
+This repository containts following directories and files.
+<h3>1. JS book</h3>
+<h3>2. Calculator</h3>
+<p> Calculator written in html and javascript</p>
+<h3>3. Assignemnts</h3>
+<p> It containts all book assignments</p>
+<h3>4. Assignment solutions</h3>
+<p> It contains all book assignment solutions</p>
+<b>If you need any help, feel free to contact me through email. Thanks</b>
